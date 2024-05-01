@@ -1,0 +1,211 @@
+html {
+  font-size: 16px;
+}
+* {
+  transition: 1s;
+  font-family: "Abhaya Libre";
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  align-items: center;
+  background-image: url(./design-web/bg-wab4\ -\ Copy_converted.webp);
+  background-repeat: no-repeat;
+  margin: 0px;
+  font-family: "Abhaya Libre";
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  align-items: center;
+  /* padding: 1rem; */
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
+nav {
+  display: flex;
+  align-items: center;
+  background-color: rgba(14, 161, 235, 0.46);
+  height: 5rem;
+  width: 100%;
+}
+nav img {
+  width: 5rem;
+  background-color: rgba(0, 157, 255, 0.474);
+  margin: 1rem;
+  border-radius: 1rem;
+
+  position: relative;
+}
+
+nav a {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  transform: translate(-7rem, 2rem);
+}
+
+nav .nav-text {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+.first {
+  width: fit-content;
+  height: 3rem;
+  margin: 0.2rem;
+  border-radius: 2rem;
+  background-color: #3199d569;
+  border:solid  #1291d4bf;
+  color: #f7f7f7;
+  font-size: 1.5rem;
+  animation: submit 4s infinite ease;
+  
+}
+.first:hover {
+  background-color: #0073ff;
+  transform: translate(0, 0.5rem);
+  transition: 0.5s ease;
+}
+
+.bottle {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  
+}
+
+input {
+  background-color: #e0ebfac4;
+  width: 25rem;
+  height: 3rem;
+  border-radius: 1rem;
+  border: solid blue;
+}
+ul {
+  width: 100%;
+  font-size: 2rem;
+  /* text-wrap: wrap; */
+  color: white;
+  padding: 0px;
+}
+.product::before {
+  content: "100M.L 500L.E" " 50M.L 300L.E " " 30M.L 200L.E";
+  width: fit-content;
+  padding: 0.3rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  background-color: #022e4891;
+  position: relative;
+  color: white;
+}
+.product {
+  list-style-type: none;
+  cursor: pointer;
+  padding: 10px;
+  margin: 1rem;
+  border: 0.2rem solid #ccc;
+  border-radius: 1rem;
+  background-color: #166c7959;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+.oriantal .product::before {
+  content: "100M.L 600L.E" "\00a0"" 50M.L 350L.E " "\00a0"" 30M.L 250L.E"; /* \00a0 is the Unicode for non-breaking space */
+  width: fit-content;
+  padding: 0.3rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  background-color: #022e4891;
+  position: relative;
+  color: white;
+}
+
+.product:active {
+  background-color: #04252e87;
+}
+
+#suggestionList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestion {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.suggestion:hover {
+  background-color: #00000094;
+}
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: auto;
+  position: relative;
+  padding: 1rem;
+}
+.back input {
+  background-color: #0ce6fe3a;
+  border: solid 0.2rem #1291d4bf;
+  color: #f7f7f7;
+  font-size: 2rem;
+  position: relative;
+  border-radius: 1rem;
+  color: black;
+  backdrop-filter: blur(10px);
+}
+.back:active {
+  background-color: #0073ff;
+  transform: translate(0, 0.5rem);
+  transition: 0.5s ease;
+}
+@media (min-width: 200px) and (max-width: 299px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 420px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (min-width: 421px) and (max-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+}
+@keyframes submit{
+  0% {
+    border:solid #1a2ebfac; /* Initial border color */
+  }
+  25%{
+    border: solid rgba(104, 46, 205, 0.803);
+  }
+  
+  50% {
+    border:solid #d420ddd1; /* Intermediate border color */
+  }
+  75%{
+    border: solid rgb(44, 98, 227);
+  }
+
+  100% {
+    border:solid #1ef9e7db; /* Final border color */
+  }
+ 
+}

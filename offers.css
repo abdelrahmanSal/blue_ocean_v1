@@ -1,0 +1,125 @@
+html {
+  font-size: 16px;
+}
+* {
+  transition: 1s;
+  font-family: "Abhaya Libre";
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-image: url(./design-web/bg-wab4_converted.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  font-family: "Abhaya Libre";
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: rgba(14, 161, 235, 0.46);
+  height: 5rem;
+  width: 100%;
+  padding: 1rem;
+}
+nav img {
+  width: 5rem;
+  background-color: rgba(0, 157, 255, 0.474);
+  margin: 1rem;
+  border-radius: 1rem;
+
+  position: relative;
+}
+
+nav a {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  transform: translate(-7rem, 2rem);
+}
+
+nav .nav-text {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+.first {
+  width: fit-content;
+  height: 3rem;
+  margin: 0.2rem;
+  border-radius: 0.6rem;
+  background-color: #3199d569;
+  border: solid 0.2rem #1291d4bf;
+  color: #f7f7f7;
+  font-size: 1.5rem;
+}
+.first:active {
+  background-color: #0073ff;
+  transform: translate(0, 0.5rem);
+  transition: 0.5s ease;
+}
+
+.container {
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container div{
+  display: flex;
+  align-items: center;
+ background-color: #1291d4bf;
+ margin: 3rem;
+ border-radius: 0rem 5rem 0rem 5rem;
+ padding: 2rem;
+}
+.container img{
+  width: 30rem;
+  margin: 2rem;
+
+}
+.back input {
+  background-color: #0ce6fe3a;
+  border: solid 0.2rem #1291d4bf;
+  color: #f7f7f7;
+  font-size: 2rem;
+  position: relative;
+  border-radius: 1rem;
+  color: black;
+  backdrop-filter: blur(10px);
+}
+.back:active {
+  background-color: #0073ff;
+  transform: translate(0, 0.5rem);
+  transition: 0.5s ease;
+}
+
+@media (min-width: 200px) and (max-width: 299px) {
+  html {
+    font-size: 4px;
+  }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  html {
+    font-size: 5px;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  html {
+    font-size: 6px;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  html {
+    font-size: 7px;
+  }
+}

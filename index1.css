@@ -1,0 +1,198 @@
+* {
+  transition: 0.7s;
+}
+html {
+  font-size: 16px;
+}
+
+body {
+ 
+  background-image: url(./design-web/bg-wab4\ -\ Copy_converted.webp);
+  background-repeat: no-repeat;
+  margin: 0px;
+  font-family: "Abhaya Libre";
+  backdrop-filter: blur(10px);
+  text-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+ overflow-x: hidden;
+}
+
+
+nav {
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  align-items: center;
+}
+nav h1 {
+  width: 21rem;
+  border: solid #0592db91 0.2rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: #177bd35e;
+}
+nav .nav-text {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+nav div h4 {
+  font-size: 1rem;
+  margin: 1rem;
+  border: solid #0688c2d9;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0.3rem;
+  height: fit-content;
+  background-color: #177bd385;
+}
+
+.logo {
+  display: flex;
+  width: fit-content;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 3rem;
+  border: solid #2ea3e2bf 0.5rem;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1rem 1rem 1rem 0.3rem #0d5a7d;
+}
+.photo-logo {
+  width: 20rem;
+}
+.parent-Card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #3098d547;
+  margin: 1rem;
+  width: 19rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  border: solid #2ea3e2 0.5rem;
+  height: 26rem;
+  padding: 0rem;
+  box-shadow: 1rem 1rem 1rem 0.3rem #0d5a7d;
+}
+.first {
+  width: fit-content;
+  height: fit-content;
+  margin: 0.2rem;
+  border-radius: 1rem;
+  background-color: #3199d569;
+  border: solid 0.5rem #1291d4bf;
+  color: #f7f7f7;
+  font-size: 3rem;
+  padding: 1rem;
+}
+.first:hover {
+  background-color: #0073ff;
+  transform: translate(0, 0.5rem);
+  transition: 0.5s ease;
+}
+.photo {
+  width: 15rem;
+  margin-bottom: 1rem;
+}
+.one{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  
+
+}
+
+
+footer {
+  
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  flex-wrap: wrap;
+  background-image: url(./design-web/bg-footer.svg);
+  background-size: cover;
+  transform: translateY(100%);
+}
+footer h1 {
+  width: 28rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 0px;
+    border: solid #13c6f8;
+    border-radius: 1rem;
+}
+.big-div{
+  width: fit-content;
+  margin: 1rem;
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+}
+/* footer div{
+  width: fit-content;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+.big-div div{
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer div img{
+  width: 10rem;
+  cursor: pointer;
+}
+
+
+@media (min-width: 200px) and (max-width: 299px) {
+  html {
+    font-size: 8px;
+  }
+  
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  html {
+    font-size: 12px;
+    }
+
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  html {
+    font-size: 6px;
+  }
+
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  html {
+    font-size: 7px;
+  }
+ 
+}

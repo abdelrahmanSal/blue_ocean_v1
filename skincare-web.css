@@ -1,0 +1,200 @@
+html {
+  font-size: 16px;
+}
+* {
+  transition: 0.5s;
+}
+
+body {
+  background-image: url(./design-web/bg-wab4_converted.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  font-family: "Abhaya Libre";
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: rgba(14, 161, 235, 0.46);
+  height: 5rem;
+  width: 100%;
+}
+nav img {
+  width: 5rem;
+  background-color: rgba(0, 157, 255, 0.474);
+  margin: 1rem;
+  border-radius: 1rem;
+
+  position: relative;
+}
+
+nav a {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  transform: translate(-7rem, 2rem);
+}
+
+nav .nav-text {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+.first {
+  width: fit-content;
+  height: 3rem;
+  margin: 0.2rem;
+  border-radius: 0.6rem;
+  background-color: #3199d569;
+  border: solid 0.2rem #1291d4bf;
+  color: #f7f7f7;
+  font-size: 1.5rem;
+}
+.first:active{
+  
+
+  background-color: #0073ff;
+  transform: translate(0, .5rem);
+  transition: .5s ease;
+
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  flex-wrap: wrap;
+}
+.container div {
+  background-color: rgba(50, 186, 249, 0.407);
+  margin: 1rem;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.container div img {
+  width: 20rem;
+}
+
+h3 {
+  border: solid #0b8ab5;
+  background-color: #30c7f9;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  border-radius: 1rem;
+  padding: 0.2rem;
+}
+
+.hair-mist:active img{
+  transform: scale(2);
+}
+
+.hair-mist:active:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* لون الخلفية الضبابية */
+  filter: blur(10px); /* تضبيب الخلفية */
+}
+.body-splash:active img{
+  transform: scale(2);
+}
+
+.body-splash:active:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* لون الخلفية الضبابية */
+  filter: blur(10px); /* تضبيب الخلفية */
+}
+.makhmaria:active img{
+  transform: scale(2);
+}
+
+.makhmaria:active:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* لون الخلفية الضبابية */
+  filter: blur(10px); /* تضبيب الخلفية */
+}
+.body-lotion:active img{
+  transform: scale(2);
+}
+
+.body-lotion:active:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* لون الخلفية الضبابية */
+  filter: blur(10px); /* تضبيب الخلفية */
+}
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: auto;
+  position: relative;
+  padding: 1rem;
+}
+.back input {
+  background-color: #0ce6fe3a;
+    border: solid 0.2rem #1291d4bf;
+    color: #f7f7f7;
+    font-size: 2rem;
+    position: relative;
+    border-radius: 1rem;
+    color: black;
+    backdrop-filter: blur(10px);
+}
+.back:active {
+  background-color: #0073ff;
+  transform: translate(0, 0.5rem);
+  transition: 0.5s ease;
+}
+@media (min-width: 200px) and (max-width: 299px) {
+  html {
+    font-size: 4px;
+  }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  html {
+    font-size: 5px;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  html {
+    font-size: 6px;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  html {
+    font-size: 7px;
+  }
+}
