@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skin Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./skincare-web.css" />
+    <style>
+      /* Styles for the cart icon */
+      .cart-icon {
+        position: relative;
+        cursor: pointer;
+        margin-right: 1rem;
+      }
+
+      .cart-count {
+        position: absolute;
+
+        right: -5px;
+        background-color: rgba(255, 13, 0, 0.596);
+        color: white;
+        border-radius: 50%;
+        padding: 3px 6px;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <img src="./design-web/logo_converted.webp" alt="" />
+        <a href="./index1.html"></a>
+      </div>
+      <h4 style="font-size: 2rem">Blue Ocean for Perfume</h4>
+      <div class="nav-text">
+        <!-- Cart icon with counter -->
+        <div class="cart-icon">
+          <a href="cart.html">
+            <span class="cart-count">0</span>
+            <img src="./design-web/car.png" alt="Cart" style="width: 3rem" />
+          </a>
+        </div>
+        <form
+          action="https://wa.me/message/SYFZKLCVR7Q7O1"
+          method="get"
+          target="_blank"
+        >
+          <button type="submit" class="first">Chat with Us</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="hair-mist" id="hair-mist">
+        <img src="./bottle/body-care/img/mouckp_hair_mist.webp" alt="" />
+
+        <div class="mini_container">
+          <h1>Hair Mist</h1>
+          <h2 class="see_more_trigger">See More</h2>
+          <div class="see_more" style="display: none; flex-direction: column">
+            <h3>
+              60mL = $170
+              <button
+                onclick="addToCart('Hair Mist', 170, './bottle/body-care/mouckp hair mist_converted.webp')"
+              >
+                Buy
+              </button>
+            </h3>
+            <h3>
+              120mL = $350
+              <button
+                onclick="addToCart('Hair Mist', 350, './bottle/body-care/mouckp hair mist_converted.webp')"
+              >
+                Buy
+              </button>
+            </h3>
+            <h3>
+              250mL = $700
+              <button
+                onclick="addToCart('Hair Mist', 700, './bottle/body-care/mouckp hair mist_converted.webp')"
+              >
+                Buy
+              </button>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="body-splash" id="body-splash">
+        <img src="./bottle/body-care/img/mouckp_body_splash.webp" alt="" />
+        <div class="mini_container">
+          <h1>Body Splash</h1>
+          <h2 class="see_more_trigger">See More</h2>
+          <div class="see_more" style="display: none; flex-direction: column">
+            <h3>
+              60mL = $125
+              <button
+                onclick="addToCart('Body Splash', 125, '/mouckp_body_splash.webp')"
+              >
+                Buy
+              </button>
+            </h3>
+            <h3>
+              120mL = $250
+              <button
+                onclick="addToCart('Body Splash', 250, './bottle/body-care/mouckp bidy splash_converted.webp')"
+              >
+                Buy
+              </button>
+            </h3>
+            <h3>
+              250mL = $500
+              <button
+                onclick="addToCart('Body Splash', 500, './bottle/body-care/mouckp bidy splash_converted.webp')"
+              >
+                Buy
+              </button>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="body-lotion" id="body-lotion">
+        <img src="./bottle/body-care/img/mouckp_lotion.webp" alt="" />
+        <div class="mini_container">
+          <h1>Body Lotion</h1>
+          <h2 class="see_more_trigger">See More</h2>
+          <div class="see_more" style="display: none; flex-direction: column">
+            <h3>
+              60mL = $170
+              <button
+                onclick="addToCart('Body Lotion', 170, './bottle/body-care/img/mouckp_lotion.webp')"
+              >
+                Buy
+              </button>
+            </h3>
+            <h3>
+              120mL = $350
+              <button
+                onclick="addToCart('Body Lotion', 350, './bottle/body-care/img/mouckp_lotion.webp')"
+              >
+                Buy
+              </button>
+            </h3>
+            <h3>
+              250mL = $700
+              <button
+                onclick="addToCart('Body Lotion', 700, './bottle/body-care/img/mouckp_lotion')"
+              >
+                Buy
+              </button>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="makhmaria" id="makhmaria">
+        <img src="./bottle/body-care/img/mouckp_makhmaria.webp" alt="" />
+        <div class="mini_container">
+          <h1>Makhmaria</h1>
+          <h2 class="see_more_trigger">See More</h2>
+          <div class="see_more" style="display: none; flex-direction: column">
+            <h3>
+              5g = $60
+              <button onclick="addToCart('Makhmaria', 60,)">Buy</button>
+            </h3>
+            <h3>
+              10g = $120
+              <button onclick="addToCart('Makhmaria', 120)">Buy</button>
+            </h3>
+            <h3>
+              30g = $350
+              <button onclick="addToCart('Makhmaria', 350)">Buy</button>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="back">
+      <form action="./index.html" method="get">
+        <input type="submit" value="back" class="back" />
+      </form>
+    </div>
+    <script src="./body_care.js"></script>
+    <script src="../shared.js"></script>
+  </body>
+</html>

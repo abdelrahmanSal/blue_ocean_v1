@@ -1,0 +1,159 @@
+html {
+  font-size: 16px;
+}
+* {
+  transition: 1s;
+  font-family: "Abhaya Libre";
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-image: url(./design-web/bg-wab4_converted.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  font-family: "Abhaya Libre";
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: rgba(14, 161, 235, 0.46);
+  height: 5rem;
+  width: 100%;
+
+}
+nav img {
+  width: 5rem;
+  background-color: rgba(0, 157, 255, 0.474);
+  margin: 1rem;
+  border-radius: 1rem;
+
+  position: relative;
+}
+
+nav a {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  transform: translate(-7rem, 2rem);
+}
+
+nav .nav-text {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+.first {
+  width: fit-content;
+  height: 3rem;
+  margin: 0.2rem;
+  border-radius: 0.6rem;
+  background-color: #3199d569;
+  border: solid 0.2rem #1291d4bf;
+  color: #f7f7f7;
+  font-size: 2rem;
+  padding: 0.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.first:active {
+  background-color: #0073ff;
+  transform: translate(0, 0.5rem);
+  transition: 0.5s ease;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container h1 {
+  font-size: 3rem;
+  background-color: #25d9ffdb;
+  padding: 1rem;
+  border: solid #0992ff 0.2rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.container img {
+  width: 20rem;
+  position: relative;
+  margin: 1rem;
+  background-color: #0baed154;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.imges div {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+    margin: 1rem;
+    background-color: #0baed154;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: auto;
+  position: relative;
+  padding: 1rem;
+}
+.back input {
+  background-color: #0ce6fe3a;
+  border: solid 0.2rem #1291d4bf;
+  color: #f7f7f7;
+  font-size: 2rem;
+  position: relative;
+  border-radius: 1rem;
+  color: black;
+  backdrop-filter: blur(10px);
+}
+.back:active {
+  background-color: #0073ff;
+  transform: translate(0, 0.5rem);
+  transition: 0.5s ease;
+}
+
+
+@media (min-width: 200px) and (max-width: 299px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 420px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (min-width: 421px) and (max-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+}

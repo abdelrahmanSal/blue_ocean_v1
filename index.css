@@ -1,0 +1,300 @@
+* {
+  transition: 0.7s;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-size: cover;
+  background-image: url(./design-web/bg-wab4\ -\ Copy_converted.webp);
+  background-repeat: no-repeat;
+  margin: 0px;
+  font-family: "Abhaya Libre";
+  /* backdrop-filter: blur(50px); */
+  text-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: fit-content;
+  text-align: center;
+  width: fit-content;
+  backdrop-filter: blur(50px);
+}
+
+nav {
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+nav h1 {
+  width: fit-content;
+  border: solid #0036525e;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #177bd35e;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+nav .nav-text {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+
+}
+
+.logo {
+  display: flex;
+  width: fit-content;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 3rem;
+  border: solid #2ea3e2bf 0.5rem;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1rem 1rem 1rem 0.3rem #0d5a7d;
+}
+
+.photo-logo {
+  width: 15rem;
+}
+
+.text {
+  font-size: 1.5rem;
+  text-align: end;
+  padding: 0.3rem;
+}
+
+.parent-Card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.perfume {
+  background-image: url(./bottle/orignal_perfume/suvage_edt.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: perfume 30s infinite ease;
+}
+
+@keyframes perfume {
+  10% {
+    background-image: url(./bottle/orignal_perfume/invectus.webp);
+  }
+
+  20% {
+    background-image: url(./bottle/orignal_perfume/libre.webp);
+  }
+
+  30% {
+    background-image: url(./bottle/orignal_perfume/lucky.webp);
+  }
+
+  40% {
+    background-image: url(./bottle/orignal_perfume/olempia.webp);
+  }
+
+  50% {
+    background-image: url(./bottle/orignal_perfume/.webp);
+  }
+
+  60% {
+    background-image: url(./bottle/orignal_perfume/creed_irsh_tweed.png);
+  }
+
+  70% {
+    background-image: url(./bottle/orignal_perfume/black_afgano.webp);
+  }
+
+  80% {
+    background-image: url(./bottle/orignal_perfume/altra_male.webp);
+  }
+
+  90% {
+    background-image: url(./bottle/orignal_perfume/oudwood.webp);
+  }
+
+  100% {
+    background-image: url(./bottle/orignal_perfume/orchid.webp);
+  }
+}
+
+.body {
+  background-image: url(./bottle/body-care/body\ lotion_converted.webp);
+  background-size: contain;
+  animation: body 20s infinite;
+  background-repeat: no-repeat;
+  animation: body 20s infinite;
+}
+
+@keyframes body {
+  50% {
+    background-image: url(./bottle/body-care/hiar-mist\ 50m_converted_1.webp);
+  }
+
+  75% {
+    background-image: url(./bottle/body-care/makhmaria_converted.webp);
+  }
+
+  100% {
+    background-image: url(./bottle/body-care/splash_converted.webp);
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #19bcfc;
+  margin: 1rem;
+  width: 20rem;
+  align-items: center;
+  border-radius: 1rem;
+  border: solid #2ea3e2 0.5rem;
+  height: 25rem;
+  padding: 0rem;
+  justify-content: end;
+  box-shadow: 1rem 1rem 1rem 0.3rem #0d5a7d;
+}
+
+.offer {
+  background-image: url(./offers/offer1.webp);
+  background-size: cover;
+  animation: offer 10s infinite;
+}
+
+@keyframes offer {
+  25% {
+    background-image: url(./offers/offer2.webp);
+  }
+
+  50% {
+    background-image: url(./offers/offer3.webp);
+  }
+
+  75% {
+    background-image: url(./offers/offer4.webp);
+  }
+}
+
+.first {
+  width: 30rem;
+  height: 40rem;
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+  background-color: #3199d500;
+  border: 0px;
+  color: #f7f7f7;
+  font-size: 3rem;
+  padding: 1rem;
+ text-align: center;
+ display: flex;
+ align-items: end;
+ justify-content: center;
+ 
+}
+
+
+.photo {
+  width: 15rem;
+  margin-bottom: 1rem;
+}
+
+.one {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  flex-wrap: wrap;
+  background-image: url(./design-web/bg-footer.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(5%);
+  position: relative;
+}
+
+footer h1 {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  margin: 0px;
+  border: solid #000000;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.big-div {
+  width: fit-content;
+  margin: 1rem;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+/* footer div{
+  width: fit-content;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+.big-div div {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer div img {
+  width: 5rem;
+  cursor: pointer;
+}
+
+@media (min-width: 200px) and (max-width: 299px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+  html {
+    font-size: 7px;
+  }
+}
