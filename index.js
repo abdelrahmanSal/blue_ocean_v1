@@ -46,7 +46,7 @@ document
 document
       .getElementById("btnbody")
       .addEventListener("click", function () {
-        window.location.href = "./skincare-web.html"; // Make sure index.html is in the same directory
+        window.location.href = "./body_care.html"; // Make sure index.html is in the same directory
       });
 document
       .getElementById("btnoffers")
