@@ -1,0 +1,250 @@
+html {
+  font-size: 16px;
+}
+
+* {
+  transition: 0.5s;
+}
+
+body {
+  background-image: url(./design-web/bg-wab4_converted.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  font-family: "Abhaya Libre";
+  backdrop-filter: blur(50px);
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: rgba(14, 161, 235, 0.46);
+  height: 5rem;
+  width: 100%;
+}
+
+nav img {
+  width: 5rem;
+  background-color: rgba(0, 157, 255, 0.474);
+  margin: 1rem;
+  border-radius: 1rem;
+
+  position: relative;
+}
+
+nav a {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  transform: translate(-7rem, 2rem);
+}
+
+nav .nav-text {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.buy {
+  width: 25rem;
+  background-color: #21bafd;
+  margin-top: 3rem;
+  border: solid #abe8fb;
+  height: fit-content;
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  font-family: ui-monospace;
+  padding: 5px;
+  /* display: flex; */
+  text-align: center;
+}
+
+.first {
+  width: fit-content;
+  height: 3rem;
+  margin: 0.2rem;
+  border-radius: 0.6rem;
+  background-color: #3199d569;
+  border: solid 0.2rem #1291d4bf;
+  color: #f7f7f7;
+  font-size: 1.5rem;
+}
+
+.first:active {
+  background-color: #0073ff;
+  transform: translate(0, 0.5rem);
+  transition: 0.5s ease;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  flex-wrap: wrap;
+}
+
+.container .hair-mist,
+.body-splash,
+.body-lotion,
+.makhmaria,
+.back {
+  background-color: rgb(28 185 251);
+  margin: 1rem;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5rem 0rem;
+  padding: 1rem;
+  border: solid #5adeff;
+}
+
+.container div img {
+  width: 55rem;
+  border-radius: 5rem 0rem;
+}
+
+.mini_container {
+  background-color: rgb(216 218 220);
+  margin: 1rem;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5rem 0rem;
+  padding: 1rem;
+  border: solid #5adeff;
+  color: rgb(2, 17, 22);
+  letter-spacing: 2px;
+}
+
+button {
+  width: 7rem;
+  height: 4rem;
+  margin: 1rem;
+  background-color: #a3a2a2d0;
+  border: solid;
+  color: rgb(255, 255, 255);
+  border-radius: 1rem 0rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: submit 5s infinite;
+}
+
+h1 {
+  padding: 3rem;
+  border: solid #5adeff;
+  width: fit-content;
+  border-radius: 5rem 0rem;
+  background-color: #d8dadc;
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+  background-color: #d8dadc;
+  padding: 1rem;
+  border-radius: 2rem 0rem;
+  border: solid #5adeff;
+}
+
+h3 {
+  border: solid #5adeff;
+  background-color: #d8dadc;
+  width: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  border-radius: 2rem 0rem;
+  padding: 1rem;
+  font-size: 4rem;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: auto;
+  position: relative;
+  padding: 1rem;
+}
+
+.back input {
+  background-color: #0ce6fe3a;
+  border: solid 0.2rem #1291d4bf;
+  color: #f7f7f7;
+  font-size: 2rem;
+  position: relative;
+  border-radius: 1rem;
+  color: black;
+  backdrop-filter: blur(10px);
+}
+
+
+button:active {
+  transform: translate(1rem, 1rem);
+  transform: scale(2);
+  transition: 2s ease;
+}
+
+
+
+@keyframes submit {
+  0% {
+    border: solid #1a2ebfac 2px;
+    /* Initial border color */
+  }
+
+  25% {
+    border: solid rgba(104, 46, 205, 0.803) 2px;
+  }
+
+  50% {
+    border: solid #d420ddd1 2px;
+    /* Intermediate border color */
+  }
+
+  75% {
+    border: solid rgb(44, 98, 227) 2px;
+  }
+
+  100% {
+    border: solid #1ef9e7db 2px;
+    /* Final border color */
+  }
+}
+
+@media (min-width: 200px) and (max-width: 299px) {
+  html {
+    font-size: 4px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+  html {
+    font-size: 7px;
+  }
+}
