@@ -11,7 +11,7 @@ body {
   background-size: cover;
   margin: 0px;
   font-family: "Abhaya Libre";
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(50px);
   display: flex;
   flex-wrap: wrap;
   /* align-items: center; */
@@ -35,7 +35,7 @@ nav img {
 }
 
 nav a {
-  position: absolute;
+  position: relative;
   width: 5rem;
   height: 5rem;
   transform: translate(-7rem, 2rem);
@@ -45,6 +45,19 @@ nav .nav-text {
   display: flex;
   justify-content: end;
   width: 100%;
+}
+.buy {
+  width: 25rem;
+  background-color: #21bafd;
+  margin-top: 3rem;
+  border: solid #abe8fb;
+  height: fit-content;
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  font-family: ui-monospace;
+  padding: 5px;
+  /* display: flex; */
+  text-align: center;
 }
 .first {
   width: fit-content;
@@ -56,13 +69,10 @@ nav .nav-text {
   color: #f7f7f7;
   font-size: 1.5rem;
 }
-.first:active{
-  
-
+.first:active {
   background-color: #0073ff;
-  transform: translate(0, .5rem);
-  transition: .5s ease;
-
+  transform: translate(0, 0.5rem);
+  transition: 0.5s ease;
 }
 .container {
   display: flex;
@@ -71,89 +81,85 @@ nav .nav-text {
   margin-top: 10rem;
   flex-wrap: wrap;
 }
-.container div {
-  background-color: rgba(50, 186, 249, 0.407);
+.container .hair-mist,
+.body-splash,
+.body-lotion,
+.makhmaria,
+.back {
+  background-color: rgb(28 185 251);
   margin: 1rem;
   width: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: 2rem;
+  border-radius: 5rem 0rem;
   padding: 1rem;
+  border: solid #5adeff;
 }
 .container div img {
-  width: 20rem;
+  width: 55rem;
+  border-radius: 5rem 0rem;
 }
-
-h3 {
-  border: solid #0b8ab5;
-  background-color: #30c7f9;
-  width: 8rem;
+.mini_container {
+  background-color: rgb(216 218 220);
+  margin: 1rem;
+  width: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 2rem;
-  border-radius: 1rem;
-  padding: 0.2rem;
+  flex-direction: column;
+  border-radius: 5rem 0rem;
+  padding: 1rem;
+  border: solid #5adeff;
+  color: rgb(2, 17, 22);
+  letter-spacing: 2px;
+}
+button {
+  width: 6rem;
+  height: 3rem;
+  margin: 1rem;
+  background-color: #3a3a3ad0;
+  border: solid;
+  animation: submit 5s infinite ease;
+  color: rgb(255, 255, 255);
+  border-radius: 1rem 0rem;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: submit 10s infinite;
 }
 
-.hair-mist:active img{
-  transform: scale(2);
+h1 {
+  padding: 3rem;
+  border: solid #5adeff;
+  width: fit-content;
+  border-radius: 5rem 0rem;
+  background-color: #d8dadc;
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+  background-color: #d8dadc;
+  padding: 1rem;
+  border-radius: 2rem 0rem;
+  border: solid #5adeff;
+}
+h3 {
+  border: solid #5adeff;
+  background-color: #d8dadc;
+  width: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  border-radius: 2rem 0rem;
+  padding: 1rem;
+  font-size: 4rem;
 }
 
-.hair-mist:active:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* لون الخلفية الضبابية */
-  filter: blur(10px); /* تضبيب الخلفية */
-}
-.body-splash:active img{
-  transform: scale(2);
-}
-
-.body-splash:active:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* لون الخلفية الضبابية */
-  filter: blur(10px); /* تضبيب الخلفية */
-}
-.makhmaria:active img{
-  transform: scale(2);
-}
-
-.makhmaria:active:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* لون الخلفية الضبابية */
-  filter: blur(10px); /* تضبيب الخلفية */
-}
-.body-lotion:active img{
-  transform: scale(2);
-}
-
-.body-lotion:active:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* لون الخلفية الضبابية */
-  filter: blur(10px); /* تضبيب الخلفية */
-}
 .back {
   display: flex;
   align-items: center;
@@ -165,18 +171,37 @@ h3 {
 }
 .back input {
   background-color: #0ce6fe3a;
-    border: solid 0.2rem #1291d4bf;
-    color: #f7f7f7;
-    font-size: 2rem;
-    position: relative;
-    border-radius: 1rem;
-    color: black;
-    backdrop-filter: blur(10px);
+  border: solid 0.2rem #1291d4bf;
+  color: #f7f7f7;
+  font-size: 2rem;
+  position: relative;
+  border-radius: 1rem;
+  color: black;
+  backdrop-filter: blur(10px);
 }
 .back:active {
   background-color: #0073ff;
   transform: translate(0, 0.5rem);
   transition: 0.5s ease;
+}
+@keyframes submit {
+  0% {
+    border: solid #1a2ebfac 2px; /* Initial border color */
+  }
+  25% {
+    border: solid rgba(104, 46, 205, 0.803) 2px;
+  }
+
+  50% {
+    border: solid #d420ddd1 2px; /* Intermediate border color */
+  }
+  75% {
+    border: solid rgb(44, 98, 227) 2px;
+  }
+
+  100% {
+    border: solid #1ef9e7db 2px; /* Final border color */
+  }
 }
 @media (min-width: 200px) and (max-width: 299px) {
   html {

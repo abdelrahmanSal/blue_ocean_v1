@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./cart.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>Shopping Cart</h1>
+    <div id="cart-items"></div>
+    <p id="cart-total">Total: 0 EGP</p>
+
+    <div class="div_send">
+        <p>Click on the button to send your order</p>
+        <button id="send">Send</button>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <form id="loginForm" style="align-items: center; display: flex; flex-direction: column;">
+                <h2>Login</h2>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                    <label for="number">Phone Number:</label>
+                    <input type="tel" id="number" name="number" required />
+                </div>
+
+                <div class="form-group"> <!-- New -->
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea>
+                </div>
+                <div class="form-group"> <!-- New -->
+                    <label for="notes">Notes:</label>
+                    <textarea id="notes" name="notes"></textarea>
+                </div>
+                <button type="submit">submit</button>
+            </form>
+            <button id="closePopup" class="close-popup">Close</button>
+        </div>
+    </div>
+
+
+    <button onclick="clearCart()" id="button-clear">Clear</button>
+    <button id="openPageButton">Back</button>
+
+    <script src="./script.js"></script>
+    <script src="./shared.js"></script>
+</body>
+
+</html>
